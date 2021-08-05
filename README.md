@@ -24,10 +24,25 @@ breakdown the male and female mortality risks state by state to better
 understand how America has progressed from the years 1980 through 2014.
 
 Tools Used:
-Excel, Python, and Tableau
+Excel, Python(Pandas), and Tableau
 
 
-Challenges/Findings:
+Challenges/Findings: 
+- The first challenge I across was how i wanted to break down my data and my 
+plan of attack for EDA. I had 6 worksheets in a workbook si wanted to break 
+thos down to 6 seperate CSV files to make digesting the data easier to
+accomplish.
+- After they were CSVs i had to come up with a plan of attack on how to make
+the columns and rows line up. Some CSVs had the county and state in the 
+same cell, while others were split between two cells. So, I had to come 
+up with the formula in excel in order to split the shared cells up to
+match the other CSV files.
+- Then I had to worry about counties whose name was two words. My initial
+ formula in excel was based off of a space so then I had to readjust that
+ in order to pick up both words that made up the county
+- Next I pulled all of the CSVs into python(Pandas) where the majority
+ of my deep cleaning and shaping came from.
+-
 
 
 Conclusin:
