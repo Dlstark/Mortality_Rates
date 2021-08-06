@@ -808,8 +808,10 @@
           <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
           <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
           <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+          <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
           <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
           <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+          <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
         </semantic-values>
       </column>
       <column caption='County County (mort risk 25-45 csv.csv)' datatype='string' name='[County County (mort_risk_25-45_csv.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
@@ -1162,8 +1164,10 @@
                 <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
                 <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
                 <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+                <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
                 <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
                 <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+                <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
               </semantic-values>
             </column>
             <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
@@ -1211,8 +1215,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' field-type='quantitative' max='33224329.253842026' min='25029827.874326985' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' field-type='quantitative' max='8672628.5615095086' min='13906.376579658361' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' field-type='quantitative' max='34601233.303324372' min='20054206.335521381' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' field-type='quantitative' max='14913545.036132261' min='-457575.09641974967' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='mark'>
             <encoding attr='color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
@@ -1333,8 +1337,10 @@
                 <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
                 <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
                 <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+                <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
                 <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
                 <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+                <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
               </semantic-values>
             </column>
             <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
@@ -1419,8 +1425,10 @@
                 <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
                 <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
                 <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+                <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
                 <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
                 <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+                <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
               </semantic-values>
             </column>
             <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
@@ -1657,8 +1665,10 @@
             <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
             <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
             <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+            <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
             <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
             <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+            <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
           </semantic-values>
         </column>
         <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
@@ -1780,8 +1790,8 @@
           </layout-options>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='124' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='123' param='vert' w='99034' x='483' y='906'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='126' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='125' param='vert' w='99034' x='483' y='906'>
                 <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='61' h='7814' id='12' w='39861' x='50000' y='906'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -2047,7 +2057,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='111' />
+      <active id='98' />
       <simple-id uuid='{82B9C024-6F2C-44D5-941B-122B47877EA3}' />
     </window>
   </windows>
