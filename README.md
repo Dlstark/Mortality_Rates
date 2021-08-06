@@ -1,7 +1,7 @@
-Include Your Project's Title: 
-#**Life as we know.**
+Include Your Project's Title: git add 
+# **Life as we know.**
 
-**##Introduction:**
+**## Introduction:**
 What is one thing that everybody has, yet everyone is different? 
 Life… Life is the single most important thing a person can have. That is 
 why it is so crucial that we sustain and preserve it. How has life been 
