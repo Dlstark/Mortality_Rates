@@ -80,7 +80,7 @@ from the state being Roman Catholic under both Francis and Spain’s rule.
 Through each change in history, they have never deviated from that.
 
 ## **Sources:**
-[United States Life Expectancy and Age-specific Mortality Risk by County 1980-2014 | GHDx] (healthdata.org)
+[http://ghdx.healthdata.org/record/ihme-data/united-states-life-expectancy-and-age-specific-mortality-risk-county-1980-2014]
 
 
 
