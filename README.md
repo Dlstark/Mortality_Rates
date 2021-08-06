@@ -1,5 +1,5 @@
 Include Your Project's Title: 
-**#Life as we know.**
+#**Life as we know.**
 
 **##Introduction:**
 What is one thing that everybody has, yet everyone is different? 
