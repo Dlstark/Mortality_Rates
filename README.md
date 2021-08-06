@@ -1,7 +1,7 @@
-Include Your Project's Title: git add 
+
 # **Life as we know.**
 
-**## Introduction:**
+ ## **Introduction:** 
 What is one thing that everybody has, yet everyone is different? 
 Life… Life is the single most important thing a person can have. That is 
 why it is so crucial that we sustain and preserve it. How has life been 
@@ -13,7 +13,7 @@ determine the male and female life expectancy and mortality rate using ages
 county/state has progressed or regressed over the 34-year span. 
 
 
-**##Motivation/why should you care:**
+## **Motivation/why should you care:**
 The word “life” has always felt so strange to me. Is it just a number with 
 age, a long road of A to B, or what you make of it from beginning to end? 
 There is so much that plays a factor in it, so I really wanted to dig deep
@@ -23,11 +23,11 @@ state to see how rates have increased or decreased. I am excited to
 breakdown the male and female mortality risks state by state to better
 understand how America has progressed from the years 1980 through 2014.
 
-**##Tools Used:**
+## **Tools Used:**
 Excel, Python(Pandas), and Tableau
 
 
-**##Challenges:** 
+## **Challenges:** 
 - The first challenge I across was how i wanted to break down my data and my 
 plan of attack for EDA. I had 6 worksheets in a workbook si wanted to break 
 thos down to 6 seperate CSV files to make digesting the data easier to
@@ -69,17 +69,17 @@ where I could merge all of the CSV's together to start building my
 visualization.
 -
 
-**##Conclusion:**
+## **Conclusion:**
 
 
-**##Fun Facts:**
+## **Fun Facts:**
 - The state of Delaware has the fewest amount of counties, it only has 3.
 - The most common county name is Washington County, 31 states have this county.
 - Louisiana is the only state to still have parishes and not counties. This is 
 from the state being Roman Catholic under both Francis and Spain’s rule.
 Through each change in history, they have never deviated from that.
 
-**##Sources:**
+## **Sources:**
 United States Life Expectancy and Age-specific Mortality Risk by County 1980-2014 | GHDx (healthdata.org)
 
 
