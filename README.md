@@ -76,7 +76,7 @@ visualization.
 - The state of Delaware has the fewest amount of counties, it only has 3.
 - The most common county name is Washington County, 31 states have this county.
 - Louisiana is the only state to still have parishes and not counties. This is 
-from the state being Roman Catholic under both Francis and Spain’s rule.
+from the state being Roman Catholic under both Frances and Spain’s rule.
 Through each change in history, they have never deviated from that.
 
 ## **Sources:**
