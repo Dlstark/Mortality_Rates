@@ -80,12 +80,12 @@ from the state being Roman Catholic under both Francis and Spain’s rule.
 Through each change in history, they have never deviated from that.
 
 ## **Sources:**
-(United States Life Expectancy and Age-specific Mortality Risk by County 1980-2014 | GHDx (healthdata.org))
+[Link](United States Life Expectancy and Age-specific Mortality Risk by County 1980-2014 | GHDx (healthdata.org))
 
 
 
 
  
- ## **Key Notes** 
- *Probability of death, age 0-5 (%). Numbers in parentheses are 95% uncertainty intervals.
-*Life expectancy at birth (years). Numbers in parentheses are 95% uncertainty intervals.
+ ## **Key Notes:** 
+-Probability of death, age 0-5 (%). Numbers in parentheses are 95% uncertainty intervals.
+-Life expectancy at birth (years). Numbers in parentheses are 95% uncertainty intervals.
