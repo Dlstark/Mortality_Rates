@@ -67,10 +67,27 @@ lined up throughout all of the data frames and then I was finally able to
 pull them back into a CSV. Once I pulled them in I imported them to tableau 
 where I could merge all of the CSV's together to start building my 
 visualization.
--
+- Pulling everything in tableau and matching all 6 CSVs was not diffcult 
+but very time consuming with minute details. From there it was a lot of 
+trial and error to make a presentable dashboard to fulfil anyones curious
+needs. 
 
-## **Conclusion:**
-
+## **Conclusion:** 
+Overall in th past 34 years, Life expectancy seems to have gone up, and mortality
+risks seem to have gone down. Throughout the United States the average age of 
+life expecantcy has gone up by just under 4 years. Alaska having the greatest
+increase in age being over 7 years. One thing worth noting in regard to the 25-45
+age group. The only time where mortality risk increased was in that age group and
+it was from 1985-1995. That occured in almost every single state, and only for
+that age group. As far as why, I was unsuccessful finding any solid reason that 
+may have caused this, but is definetly worth mentioning. Now for a finding that 
+may not come as a surprise. Over the 34 years of data collected, females have 
+had a higher life expectancy rate with an average of 1.2 years. With that being 
+said, the mortality risk tells a completely different story. Across all years 
+included in this data set females also have a higher mortality risk in every age 
+group. One other neat find in regards to the mortality risk over the time span, 
+for the age group 65 through 85 we have been able to lower their mortality risk 
+by over 10% for both male and female.
 
 ## **Fun Facts:**
 - The state of Delaware has the fewest amount of counties, it only has 3.
