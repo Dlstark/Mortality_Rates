@@ -1,0 +1,2565 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20211.21.0511.0935                               -->
+<workbook source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AllowCalculationsForDensifiedMarks.true...AllowCalculationsForDensifiedMarks />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='life_exp' inline='true' name='federated.1t2srdc0louk9n144zqv91qw3gvi' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='life_exp' name='textscan.1erayxb1yj0nch15kw4re1w9z354'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/Data/life_exp.csv' dataRefreshTime='' directory='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/Data' filename='C:/Users/dlsta/AppData/Local/Temp/TableauTemp/1r92n970pshsa617d98tu0zlxo2r/life_exp.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Union' type='union'>
+          <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+            <column datatype='integer' name='F1' />
+            <column datatype='string' name='Location Location' />
+            <column datatype='string' name='County County' />
+            <column datatype='real' name='Mortality Risk % Mortality Risk %' />
+            <column datatype='string' name='Sex Sex' />
+            <column datatype='integer' name='Year Year' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_0-5_csv.csv1' table='[mort_risk_0-5_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_5-25_csv.csv' table='[mort_risk_5-25_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_25-45_csv.csv' table='[mort_risk_25-45_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_45-65_csv.csv' table='[mort_risk_45-65_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_65-85_csv.csv' table='[mort_risk_65-85_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='life_exp.csv' table='[life_exp#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Age in Years Age in Years' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation all='true' name='Union' type='union'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' />
+              <column datatype='string' name='Location Location' />
+              <column datatype='string' name='County County' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' />
+              <column datatype='string' name='Sex Sex' />
+              <column datatype='integer' name='Year Year' />
+              <column datatype='string' name='Table Name' />
+            </columns>
+            <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_0-5_csv.csv1' table='[mort_risk_0-5_csv#csv$]' type='table'>
+              <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_5-25_csv.csv' table='[mort_risk_5-25_csv#csv$]' type='table'>
+              <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_25-45_csv.csv' table='[mort_risk_25-45_csv#csv$]' type='table'>
+              <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_45-65_csv.csv' table='[mort_risk_45-65_csv#csv$]' type='table'>
+              <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_65-85_csv.csv' table='[mort_risk_65-85_csv#csv$]' type='table'>
+              <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='Location Location' ordinal='1' />
+                <column datatype='string' name='County County' ordinal='2' />
+                <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                <column datatype='string' name='Sex Sex' ordinal='4' />
+                <column datatype='integer' name='Year Year' ordinal='5' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_0-5_csv.csv' table='[mort_risk_0-5_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_25-45_csv.csv' table='[mort_risk_25-45_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_45-65_csv.csv' table='[mort_risk_45-65_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_5-25_csv.csv' table='[mort_risk_5-25_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_65-85_csv.csv' table='[mort_risk_65-85_csv#csv$]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Location Location' ordinal='1' />
+              <column datatype='string' name='County County' ordinal='2' />
+              <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+              <column datatype='string' name='Sex Sex' ordinal='4' />
+              <column datatype='integer' name='Year Year' ordinal='5' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Age in Years Age in Years]' value='[life_exp.csv].[Age in Years Age in Years]' />
+          <map key='[County County (Union)]' value='[Union].[County County]' />
+          <map key='[County County (life_exp.csv)]' value='[life_exp.csv].[County County]' />
+          <map key='[County County (mort_risk_25-45_csv.csv)]' value='[mort_risk_25-45_csv.csv].[County County]' />
+          <map key='[County County (mort_risk_45-65_csv.csv)]' value='[mort_risk_45-65_csv.csv].[County County]' />
+          <map key='[County County (mort_risk_5-25_csv.csv)]' value='[mort_risk_5-25_csv.csv].[County County]' />
+          <map key='[County County (mort_risk_65-85_csv.csv)]' value='[mort_risk_65-85_csv.csv].[County County]' />
+          <map key='[County County]' value='[mort_risk_0-5_csv.csv].[County County]' />
+          <map key='[F1 (Union)]' value='[Union].[F1]' />
+          <map key='[F1 (mort_risk_0-5_csv.csv)]' value='[mort_risk_0-5_csv.csv].[F1]' />
+          <map key='[F1 (mort_risk_25-45_csv.csv)]' value='[mort_risk_25-45_csv.csv].[F1]' />
+          <map key='[F1 (mort_risk_45-65_csv.csv)]' value='[mort_risk_45-65_csv.csv].[F1]' />
+          <map key='[F1 (mort_risk_5-25_csv.csv)]' value='[mort_risk_5-25_csv.csv].[F1]' />
+          <map key='[F1 (mort_risk_65-85_csv.csv)]' value='[mort_risk_65-85_csv.csv].[F1]' />
+          <map key='[F1]' value='[life_exp.csv].[F1]' />
+          <map key='[Location Location (Union)]' value='[Union].[Location Location]' />
+          <map key='[Location Location (life_exp.csv)]' value='[life_exp.csv].[Location Location]' />
+          <map key='[Location Location (mort_risk_25-45_csv.csv)]' value='[mort_risk_25-45_csv.csv].[Location Location]' />
+          <map key='[Location Location (mort_risk_45-65_csv.csv)]' value='[mort_risk_45-65_csv.csv].[Location Location]' />
+          <map key='[Location Location (mort_risk_5-25_csv.csv)]' value='[mort_risk_5-25_csv.csv].[Location Location]' />
+          <map key='[Location Location (mort_risk_65-85_csv.csv)]' value='[mort_risk_65-85_csv.csv].[Location Location]' />
+          <map key='[Location Location]' value='[mort_risk_0-5_csv.csv].[Location Location]' />
+          <map key='[Mortality Risk % Mortality Risk % (Union)]' value='[Union].[Mortality Risk % Mortality Risk %]' />
+          <map key='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' value='[mort_risk_25-45_csv.csv].[Mortality Risk % Mortality Risk %]' />
+          <map key='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' value='[mort_risk_45-65_csv.csv].[Mortality Risk % Mortality Risk %]' />
+          <map key='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' value='[mort_risk_5-25_csv.csv].[Mortality Risk % Mortality Risk %]' />
+          <map key='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' value='[mort_risk_65-85_csv.csv].[Mortality Risk % Mortality Risk %]' />
+          <map key='[Mortality Risk % Mortality Risk %]' value='[mort_risk_0-5_csv.csv].[Mortality Risk % Mortality Risk %]' />
+          <map key='[Sex Sex (Union)]' value='[Union].[Sex Sex]' />
+          <map key='[Sex Sex (life_exp.csv)]' value='[life_exp.csv].[Sex Sex]' />
+          <map key='[Sex Sex (mort_risk_25-45_csv.csv)]' value='[mort_risk_25-45_csv.csv].[Sex Sex]' />
+          <map key='[Sex Sex (mort_risk_45-65_csv.csv)]' value='[mort_risk_45-65_csv.csv].[Sex Sex]' />
+          <map key='[Sex Sex (mort_risk_5-25_csv.csv)]' value='[mort_risk_5-25_csv.csv].[Sex Sex]' />
+          <map key='[Sex Sex (mort_risk_65-85_csv.csv)]' value='[mort_risk_65-85_csv.csv].[Sex Sex]' />
+          <map key='[Sex Sex]' value='[mort_risk_0-5_csv.csv].[Sex Sex]' />
+          <map key='[Table Name]' value='[Union].[Table Name]' />
+          <map key='[Year Year (Union)]' value='[Union].[Year Year]' />
+          <map key='[Year Year (life_exp.csv)]' value='[life_exp.csv].[Year Year]' />
+          <map key='[Year Year (mort_risk_25-45_csv.csv)]' value='[mort_risk_25-45_csv.csv].[Year Year]' />
+          <map key='[Year Year (mort_risk_45-65_csv.csv)]' value='[mort_risk_45-65_csv.csv].[Year Year]' />
+          <map key='[Year Year (mort_risk_5-25_csv.csv)]' value='[mort_risk_5-25_csv.csv].[Year Year]' />
+          <map key='[Year Year (mort_risk_65-85_csv.csv)]' value='[mort_risk_65-85_csv.csv].[Year Year]' />
+          <map key='[Year Year]' value='[mort_risk_0-5_csv.csv].[Year Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[life_exp.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>29994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Union]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mort_risk_0-5_csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>29994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mort_risk_25-45_csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>29994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mort_risk_45-65_csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>29994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mort_risk_5-25_csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>29994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[mort_risk_65-85_csv.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:2&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>29994</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[life_exp.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Location (life_exp.csv)]</local-name>
+            <parent-name>[life_exp.csv]</parent-name>
+            <remote-alias>Location Location</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County County (life_exp.csv)]</local-name>
+            <parent-name>[life_exp.csv]</parent-name>
+            <remote-alias>County County</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age in Years Age in Years</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Age in Years Age in Years]</local-name>
+            <parent-name>[life_exp.csv]</parent-name>
+            <remote-alias>Age in Years Age in Years</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex Sex (life_exp.csv)]</local-name>
+            <parent-name>[life_exp.csv]</parent-name>
+            <remote-alias>Sex Sex</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year (life_exp.csv)]</local-name>
+            <parent-name>[life_exp.csv]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Location (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Location Location</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County County (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>County County</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortality Risk % Mortality Risk %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortality Risk % Mortality Risk % (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Mortality Risk % Mortality Risk %</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex Sex (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Sex Sex</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year (Union)]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Union]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (mort_risk_0-5_csv.csv)]</local-name>
+            <parent-name>[mort_risk_0-5_csv.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Location]</local-name>
+            <parent-name>[mort_risk_0-5_csv.csv]</parent-name>
+            <remote-alias>Location Location</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County County]</local-name>
+            <parent-name>[mort_risk_0-5_csv.csv]</parent-name>
+            <remote-alias>County County</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortality Risk % Mortality Risk %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortality Risk % Mortality Risk %]</local-name>
+            <parent-name>[mort_risk_0-5_csv.csv]</parent-name>
+            <remote-alias>Mortality Risk % Mortality Risk %</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex Sex]</local-name>
+            <parent-name>[mort_risk_0-5_csv.csv]</parent-name>
+            <remote-alias>Sex Sex</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year]</local-name>
+            <parent-name>[mort_risk_0-5_csv.csv]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (mort_risk_25-45_csv.csv)]</local-name>
+            <parent-name>[mort_risk_25-45_csv.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Location (mort_risk_25-45_csv.csv)]</local-name>
+            <parent-name>[mort_risk_25-45_csv.csv]</parent-name>
+            <remote-alias>Location Location</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County County (mort_risk_25-45_csv.csv)]</local-name>
+            <parent-name>[mort_risk_25-45_csv.csv]</parent-name>
+            <remote-alias>County County</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortality Risk % Mortality Risk %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]</local-name>
+            <parent-name>[mort_risk_25-45_csv.csv]</parent-name>
+            <remote-alias>Mortality Risk % Mortality Risk %</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex Sex (mort_risk_25-45_csv.csv)]</local-name>
+            <parent-name>[mort_risk_25-45_csv.csv]</parent-name>
+            <remote-alias>Sex Sex</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year (mort_risk_25-45_csv.csv)]</local-name>
+            <parent-name>[mort_risk_25-45_csv.csv]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (mort_risk_45-65_csv.csv)]</local-name>
+            <parent-name>[mort_risk_45-65_csv.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Location (mort_risk_45-65_csv.csv)]</local-name>
+            <parent-name>[mort_risk_45-65_csv.csv]</parent-name>
+            <remote-alias>Location Location</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County County (mort_risk_45-65_csv.csv)]</local-name>
+            <parent-name>[mort_risk_45-65_csv.csv]</parent-name>
+            <remote-alias>County County</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortality Risk % Mortality Risk %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]</local-name>
+            <parent-name>[mort_risk_45-65_csv.csv]</parent-name>
+            <remote-alias>Mortality Risk % Mortality Risk %</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex Sex (mort_risk_45-65_csv.csv)]</local-name>
+            <parent-name>[mort_risk_45-65_csv.csv]</parent-name>
+            <remote-alias>Sex Sex</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year (mort_risk_45-65_csv.csv)]</local-name>
+            <parent-name>[mort_risk_45-65_csv.csv]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (mort_risk_5-25_csv.csv)]</local-name>
+            <parent-name>[mort_risk_5-25_csv.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Location (mort_risk_5-25_csv.csv)]</local-name>
+            <parent-name>[mort_risk_5-25_csv.csv]</parent-name>
+            <remote-alias>Location Location</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County County (mort_risk_5-25_csv.csv)]</local-name>
+            <parent-name>[mort_risk_5-25_csv.csv]</parent-name>
+            <remote-alias>County County</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortality Risk % Mortality Risk %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]</local-name>
+            <parent-name>[mort_risk_5-25_csv.csv]</parent-name>
+            <remote-alias>Mortality Risk % Mortality Risk %</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex Sex (mort_risk_5-25_csv.csv)]</local-name>
+            <parent-name>[mort_risk_5-25_csv.csv]</parent-name>
+            <remote-alias>Sex Sex</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year (mort_risk_5-25_csv.csv)]</local-name>
+            <parent-name>[mort_risk_5-25_csv.csv]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (mort_risk_65-85_csv.csv)]</local-name>
+            <parent-name>[mort_risk_65-85_csv.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location Location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Location Location (mort_risk_65-85_csv.csv)]</local-name>
+            <parent-name>[mort_risk_65-85_csv.csv]</parent-name>
+            <remote-alias>Location Location</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County County</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[County County (mort_risk_65-85_csv.csv)]</local-name>
+            <parent-name>[mort_risk_65-85_csv.csv]</parent-name>
+            <remote-alias>County County</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mortality Risk % Mortality Risk %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]</local-name>
+            <parent-name>[mort_risk_65-85_csv.csv]</parent-name>
+            <remote-alias>Mortality Risk % Mortality Risk %</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sex Sex</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Sex Sex (mort_risk_65-85_csv.csv)]</local-name>
+            <parent-name>[mort_risk_65-85_csv.csv]</parent-name>
+            <remote-alias>Sex Sex</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year Year (mort_risk_65-85_csv.csv)]</local-name>
+            <parent-name>[mort_risk_65-85_csv.csv]</parent-name>
+            <remote-alias>Year Year</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_25-45_csv.csv):qk]&quot;' value='25-45' />
+          <alias key='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_45-65_csv.csv):qk]&quot;' value='45-65' />
+          <alias key='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_5-25_csv.csv):qk]&quot;' value='5-25' />
+          <alias key='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_65-85_csv.csv):qk]&quot;' value='65-85' />
+          <alias key='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \%:qk]&quot;' value='0-5' />
+        </aliases>
+      </column>
+      <column datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_PERCENTILE(COUNT([__tableau_internal_object_id__].[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[County County (Union)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County County (life_exp.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+        <semantic-values semantic-role='[County].[Name]'>
+          <semantic-value key='&quot;Bon&quot;' value='&quot;Bon Homme&quot;' />
+          <semantic-value key='&quot;Carson&quot;' value='&quot;Carson&quot;' />
+          <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
+          <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
+          <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+          <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
+          <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
+          <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+          <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='County County (mort risk 25-45 csv.csv)' datatype='string' name='[County County (mort_risk_25-45_csv.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County County (mort risk 45-65 csv.csv)' datatype='string' name='[County County (mort_risk_45-65_csv.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County County (mort risk 5-25 csv.csv)' datatype='string' name='[County County (mort_risk_5-25_csv.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='County County (mort risk 65-85 csv.csv)' datatype='string' name='[County County (mort_risk_65-85_csv.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column datatype='string' name='[County County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='F1 (mort risk 0-5 csv.csv)' datatype='integer' name='[F1 (mort_risk_0-5_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (mort risk 25-45 csv.csv)' datatype='integer' name='[F1 (mort_risk_25-45_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (mort risk 45-65 csv.csv)' datatype='integer' name='[F1 (mort_risk_45-65_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (mort risk 5-25 csv.csv)' datatype='integer' name='[F1 (mort_risk_5-25_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='F1 (mort risk 65-85 csv.csv)' datatype='integer' name='[F1 (mort_risk_65-85_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='Location Location (mort risk 25-45 csv.csv)' datatype='string' name='[Location Location (mort_risk_25-45_csv.csv)]' role='dimension' type='nominal' />
+      <column caption='Location Location (mort risk 45-65 csv.csv)' datatype='string' name='[Location Location (mort_risk_45-65_csv.csv)]' role='dimension' type='nominal' />
+      <column caption='Location Location (mort risk 5-25 csv.csv)' datatype='string' name='[Location Location (mort_risk_5-25_csv.csv)]' role='dimension' type='nominal' />
+      <column caption='Location Location (mort risk 65-85 csv.csv)' datatype='string' name='[Location Location (mort_risk_65-85_csv.csv)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Location Location]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Mortality Risk % Mortality Risk % (mort risk 25-45 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='Mortality Risk % Mortality Risk % (mort risk 45-65 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='Mort Risk Ages 5-25' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' role='measure' type='quantitative' />
+      <column caption='Mortality Risk % Mortality Risk % (mort risk 65-85 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Mortality Risk % Mortality Risk %]' role='measure' type='quantitative' />
+      <column caption='Sex Sex (mort risk 25-45 csv.csv)' datatype='string' name='[Sex Sex (mort_risk_25-45_csv.csv)]' role='dimension' type='nominal' />
+      <column caption='Sex Sex (mort risk 45-65 csv.csv)' datatype='string' name='[Sex Sex (mort_risk_45-65_csv.csv)]' role='dimension' type='nominal' />
+      <column caption='Sex Sex (mort risk 5-25 csv.csv)' datatype='string' name='[Sex Sex (mort_risk_5-25_csv.csv)]' role='dimension' type='nominal' />
+      <column caption='Sex Sex (mort risk 65-85 csv.csv)' datatype='string' name='[Sex Sex (mort_risk_65-85_csv.csv)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Sex Sex]' role='dimension' type='nominal' />
+      <column caption='Year Year (mort risk 25-45 csv.csv)' datatype='integer' name='[Year Year (mort_risk_25-45_csv.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year Year (mort risk 45-65 csv.csv)' datatype='integer' name='[Year Year (mort_risk_45-65_csv.csv)]' role='dimension' type='quantitative' />
+      <column caption='Year Year (mort risk 5-25 csv.csv)' datatype='integer' name='[Year Year (mort_risk_5-25_csv.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year Year (mort_risk_65-85_csv.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Union' datatype='table' name='[__tableau_internal_object_id__].[_B1FF2F39687A4143BD1252BFBE25F9C1]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='life_exp.csv' datatype='table' name='[__tableau_internal_object_id__].[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mort_risk_0-5_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mort_risk_25-45_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mort_risk_45-65_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mort_risk_5-25_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='mort_risk_65-85_csv.csv' datatype='table' name='[__tableau_internal_object_id__].[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]' role='measure' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk %]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk %:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sex Sex]' derivation='None' name='[none:Sex Sex:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mortality Risk % Mortality Risk %]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk %:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='State, County' />
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sex Sex:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Combined&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_5-25_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \% (mort_risk_5-25_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_45-65_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \% (mort_risk_45-65_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_65-85_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \% (mort_risk_65-85_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_25-45_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \% (mort_risk_25-45_csv.csv):qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \%:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \%:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Union' id='_B1FF2F39687A4143BD1252BFBE25F9C1'>
+            <properties context=''>
+              <relation all='true' name='Union' type='union'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                  <column datatype='integer' name='F1' />
+                  <column datatype='string' name='Location Location' />
+                  <column datatype='string' name='County County' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' />
+                  <column datatype='string' name='Sex Sex' />
+                  <column datatype='integer' name='Year Year' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_0-5_csv.csv1' table='[mort_risk_0-5_csv#csv$]' type='table'>
+                  <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_5-25_csv.csv' table='[mort_risk_5-25_csv#csv$]' type='table'>
+                  <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_25-45_csv.csv' table='[mort_risk_25-45_csv#csv$]' type='table'>
+                  <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_45-65_csv.csv' table='[mort_risk_45-65_csv#csv$]' type='table'>
+                  <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_65-85_csv.csv' table='[mort_risk_65-85_csv#csv$]' type='table'>
+                  <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='Location Location' ordinal='1' />
+                    <column datatype='string' name='County County' ordinal='2' />
+                    <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                    <column datatype='string' name='Sex Sex' ordinal='4' />
+                    <column datatype='integer' name='Year Year' ordinal='5' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+          <object caption='life_exp.csv' id='life_exp.csv_777E3707CB4449AFA9157F1F826612B2'>
+            <properties context=''>
+              <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='life_exp.csv' table='[life_exp#csv$]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Age in Years Age in Years' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='mort_risk_0-5_csv.csv' id='mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3'>
+            <properties context=''>
+              <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_0-5_csv.csv' table='[mort_risk_0-5_csv#csv$]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='mort_risk_25-45_csv.csv' id='mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC'>
+            <properties context=''>
+              <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_25-45_csv.csv' table='[mort_risk_25-45_csv#csv$]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='mort_risk_45-65_csv.csv' id='mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD'>
+            <properties context=''>
+              <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_45-65_csv.csv' table='[mort_risk_45-65_csv#csv$]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='mort_risk_5-25_csv.csv' id='mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E'>
+            <properties context=''>
+              <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_5-25_csv.csv' table='[mort_risk_5-25_csv#csv$]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='mort_risk_65-85_csv.csv' id='mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9'>
+            <properties context=''>
+              <relation connection='textscan.1erayxb1yj0nch15kw4re1w9z354' name='mort_risk_65-85_csv.csv' table='[mort_risk_65-85_csv#csv$]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Location Location' ordinal='1' />
+                  <column datatype='string' name='County County' ordinal='2' />
+                  <column datatype='real' name='Mortality Risk % Mortality Risk %' ordinal='3' />
+                  <column datatype='string' name='Sex Sex' ordinal='4' />
+                  <column datatype='integer' name='Year Year' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[County County (life_exp.csv)]' />
+                <expression op='[County County (Union)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Location Location (life_exp.csv)]' />
+                <expression op='[Location Location (Union)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Sex Sex (life_exp.csv)]' />
+                <expression op='[Sex Sex (Union)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year Year (life_exp.csv)]' />
+                <expression op='[Year Year (Union)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='life_exp.csv_777E3707CB4449AFA9157F1F826612B2' />
+            <second-end-point object-id='_B1FF2F39687A4143BD1252BFBE25F9C1' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[County County (life_exp.csv)]' />
+                <expression op='[County County]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Location Location (life_exp.csv)]' />
+                <expression op='[Location Location]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year Year (life_exp.csv)]' />
+                <expression op='[Year Year]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Sex Sex (life_exp.csv)]' />
+                <expression op='[Sex Sex]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='life_exp.csv_777E3707CB4449AFA9157F1F826612B2' />
+            <second-end-point object-id='mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[County County (life_exp.csv)]' />
+                <expression op='[County County (mort_risk_25-45_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Sex Sex (life_exp.csv)]' />
+                <expression op='[Sex Sex (mort_risk_25-45_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Location Location (life_exp.csv)]' />
+                <expression op='[Location Location (mort_risk_25-45_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year Year (life_exp.csv)]' />
+                <expression op='[Year Year (mort_risk_25-45_csv.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='life_exp.csv_777E3707CB4449AFA9157F1F826612B2' />
+            <second-end-point object-id='mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[County County (life_exp.csv)]' />
+                <expression op='[County County (mort_risk_45-65_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Sex Sex (life_exp.csv)]' />
+                <expression op='[Sex Sex (mort_risk_45-65_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year Year (life_exp.csv)]' />
+                <expression op='[Year Year (mort_risk_45-65_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Location Location (life_exp.csv)]' />
+                <expression op='[Location Location (mort_risk_45-65_csv.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='life_exp.csv_777E3707CB4449AFA9157F1F826612B2' />
+            <second-end-point object-id='mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[County County (life_exp.csv)]' />
+                <expression op='[County County (mort_risk_5-25_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Sex Sex (life_exp.csv)]' />
+                <expression op='[Sex Sex (mort_risk_5-25_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Location Location (life_exp.csv)]' />
+                <expression op='[Location Location (mort_risk_5-25_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year Year (life_exp.csv)]' />
+                <expression op='[Year Year (mort_risk_5-25_csv.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='life_exp.csv_777E3707CB4449AFA9157F1F826612B2' />
+            <second-end-point object-id='mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E' />
+          </relationship>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[County County (life_exp.csv)]' />
+                <expression op='[County County (mort_risk_65-85_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Sex Sex (life_exp.csv)]' />
+                <expression op='[Sex Sex (mort_risk_65-85_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Location Location (life_exp.csv)]' />
+                <expression op='[Location Location (mort_risk_65-85_csv.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Year Year (life_exp.csv)]' />
+                <expression op='[Year Year (mort_risk_65-85_csv.csv)]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='life_exp.csv_777E3707CB4449AFA9157F1F826612B2' />
+            <second-end-point object-id='mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_3F53C101558C4693B09B60220C5096AF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Heatmap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='life_exp' name='federated.1t2srdc0louk9n144zqv91qw3gvi' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1t2srdc0louk9n144zqv91qw3gvi'>
+            <column datatype='real' name='[Age in Years Age in Years]' role='measure' type='quantitative' />
+            <column datatype='string' name='[County County (life_exp.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+              <semantic-values semantic-role='[County].[Name]'>
+                <semantic-value key='&quot;Bon&quot;' value='&quot;Bon Homme&quot;' />
+                <semantic-value key='&quot;Carson&quot;' value='&quot;Carson&quot;' />
+                <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
+                <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
+                <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+                <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
+                <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
+                <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+                <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Location Location]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 25-45 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' role='measure' type='quantitative' />
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 45-65 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' role='measure' type='quantitative' />
+            <column caption='Mort Risk Ages 5-25' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' role='measure' type='quantitative' />
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 65-85 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Mortality Risk % Mortality Risk %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex Sex (life_exp.csv)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Age in Years Age in Years]' derivation='Avg' name='[avg:Age in Years Age in Years:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk %]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[County County (life_exp.csv)]' derivation='None' name='[none:County County (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location Location (life_exp.csv)]' derivation='None' name='[none:Location Location (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location Location]' derivation='None' name='[none:Location Location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex Sex (life_exp.csv)]' derivation='None' name='[none:Sex Sex (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year Year]' derivation='None' name='[none:Year Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:County County (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Location Location (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Sex Sex (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' filter-group='4' included-values='in-range'>
+            <min>1980</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+          <_.fcp.AllowCalculationsForDensifiedMarks.true...calcs-on-densified-marks value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' field-type='quantitative' max='33056243.763650201' min='26009865.521965299' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' field-type='quantitative' max='9412359.7400816269' min='2057381.2367152716' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <format attr='tick-color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk %:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk %:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' value='false' />
+            <format attr='omit-on-special' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' value='false' />
+            <format attr='break-on-special' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' value='false' />
+            <format attr='omit-on-special' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' value='false' />
+            <format attr='break-on-special' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' value='Average Age' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='dark' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' value='Year' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk %:qk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' />
+              <lod column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location:nk]' />
+              <geometry column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>County/State:</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[ <[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]>]]></run>
+                <run bold='true'><![CDATA[,<[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Avg Life Expectancy:&#9;</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Mortality Risk %  Ages 0-5:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk %:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Mortality Risk %  Ages 5-25:</run>
+                <run bold='true' fontcolor='#787878'>Æ </run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Mortality Risk %  Ages 25-45:</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Mortality Risk %  Ages 45-65:</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Mortality Risk %  Ages 65-85:</run>
+                <run bold='true' fontcolor='#000000'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]</rows>
+        <cols>[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8D43E053-95F7-4F4C-B690-E3677A593E01}' />
+    </worksheet>
+    <worksheet name='Life Expectancy'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='life_exp' name='federated.1t2srdc0louk9n144zqv91qw3gvi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t2srdc0louk9n144zqv91qw3gvi'>
+            <column datatype='real' name='[Age in Years Age in Years]' role='measure' type='quantitative' />
+            <column datatype='string' name='[County County (life_exp.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+              <semantic-values semantic-role='[County].[Name]'>
+                <semantic-value key='&quot;Bon&quot;' value='&quot;Bon Homme&quot;' />
+                <semantic-value key='&quot;Carson&quot;' value='&quot;Carson&quot;' />
+                <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
+                <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
+                <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+                <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
+                <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
+                <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+                <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex Sex (life_exp.csv)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Age in Years Age in Years]' derivation='Avg' name='[avg:Age in Years Age in Years:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[County County (life_exp.csv)]' derivation='None' name='[none:County County (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location Location (life_exp.csv)]' derivation='None' name='[none:Location Location (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex Sex (life_exp.csv)]' derivation='None' name='[none:Sex Sex (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year Year]' derivation='None' name='[none:Year Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:County County (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Location Location (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Sex Sex (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' filter-group='4' included-values='in-range'>
+            <min>1980</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' value='65' />
+            <format attr='title' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' scope='rows' value='Age(Years)' />
+            <format attr='title' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' scope='cols' value='Year' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' value='Sex'>
+              <formatted-text>
+                <run fontcolor='#f5f5f5'>Sex</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' value='State'>
+              <formatted-text>
+                <run fontcolor='#f5f5f5'>State</run>
+              </formatted-text>
+            </format>
+            <format attr='title' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' value='County'>
+              <formatted-text>
+                <run fontcolor='#f5f5f5'>County</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' />
+              <text column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]</rows>
+        <cols>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</cols>
+      </table>
+      <simple-id uuid='{1687A4FD-CBBB-4934-A02D-DC40EC1589FD}' />
+    </worksheet>
+    <worksheet name='Mort RiskTrend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Mortality Risk</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='life_exp' name='federated.1t2srdc0louk9n144zqv91qw3gvi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t2srdc0louk9n144zqv91qw3gvi'>
+            <column datatype='string' name='[County County (life_exp.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+              <semantic-values semantic-role='[County].[Name]'>
+                <semantic-value key='&quot;Bon&quot;' value='&quot;Bon Homme&quot;' />
+                <semantic-value key='&quot;Carson&quot;' value='&quot;Carson&quot;' />
+                <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
+                <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
+                <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+                <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
+                <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
+                <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+                <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 25-45 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' role='measure' type='quantitative' />
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 45-65 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' role='measure' type='quantitative' />
+            <column caption='Mort Risk Ages 5-25' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' role='measure' type='quantitative' />
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 65-85 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Mortality Risk % Mortality Risk %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex Sex (life_exp.csv)]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv)]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk %]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[County County (life_exp.csv)]' derivation='None' name='[none:County County (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Location Location (life_exp.csv)]' derivation='None' name='[none:Location Location (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex Sex (life_exp.csv)]' derivation='None' name='[none:Sex Sex (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year Year]' derivation='None' name='[none:Year Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \%:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_25-45_csv.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_5-25_csv.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \%:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_25-45_csv.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_45-65_csv.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_65-85_csv.csv):qk]&quot;</bucket>
+              <bucket>&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \% (mort_risk_5-25_csv.csv):qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' filter-group='5'>
+            <groupfilter function='level-members' level='[none:County County (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' filter-group='3'>
+            <groupfilter function='level-members' level='[none:Location Location (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Sex Sex (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' filter-group='4' included-values='in-range'>
+            <min>1980</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]' scope='rows' value='Percent' />
+            <format attr='title' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' scope='cols' value='Year ' />
+            <format attr='title' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' scope='rows' value='Percent' />
+            <format attr='title' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' scope='rows' value='Percent' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk %:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' value='Age Group'>
+              <formatted-text>
+                <run>Age Group</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Agr Group 65-85:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Age Group 45-65:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Agr Group 65-85:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Age Group 45-65:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Agr Group 65-85:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Age Group 45-65:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='8' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Agr Group 65-85:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Age Group 45-65:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]>:	]]></run>
+                <run bold='true'><![CDATA[<[federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>([federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_65-85_csv.csv):qk] + ([federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk] + [federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values]))</rows>
+        <cols>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</cols>
+      </table>
+      <simple-id uuid='{C6905C84-D87C-4BA4-B632-B2216DA5A642}' />
+    </worksheet>
+    <worksheet name='Sex Mort Rate Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='life_exp' name='federated.1t2srdc0louk9n144zqv91qw3gvi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t2srdc0louk9n144zqv91qw3gvi'>
+            <column caption='Mort Risk Ages 5-25' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Mortality Risk % Mortality Risk %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex Sex (life_exp.csv)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Sex Sex]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk %]' derivation='Avg' name='[avg:Mortality Risk % Mortality Risk %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sex Sex (life_exp.csv)]' derivation='None' name='[none:Sex Sex (life_exp.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sex Sex]' derivation='None' name='[none:Sex Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year Year]' derivation='None' name='[none:Year Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv)]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk \% Mortality Risk \%:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \% (mort_risk_5-25_csv.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' filter-group='6'>
+            <groupfilter function='level-members' level='[none:Sex Sex (life_exp.csv):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' filter-group='4' included-values='in-range'>
+            <min>1980</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk % Mortality Risk % (mort_risk_5-25_csv.csv):qk]</rows>
+        <cols>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</cols>
+      </table>
+      <simple-id uuid='{A26ECE23-E527-422E-9EA9-8B0D85965F2E}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='life_exp' name='federated.1t2srdc0louk9n144zqv91qw3gvi' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1t2srdc0louk9n144zqv91qw3gvi'>
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 25-45 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' role='measure' type='quantitative' />
+            <column caption='Mortality Risk % Mortality Risk % (mort risk 45-65 csv.csv)' datatype='real' name='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Mortality Risk % Mortality Risk %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Sex Sex]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Sex Sex]' derivation='None' name='[none:Sex Sex:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year Year]' derivation='None' name='[none:Year Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv)]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk % (mort_risk_25-45_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv)]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk % (mort_risk_45-65_csv.csv):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mortality Risk % Mortality Risk %]' derivation='Sum' name='[sum:Mortality Risk % Mortality Risk %:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \%:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \% (mort_risk_25-45_csv.csv):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1t2srdc0louk9n144zqv91qw3gvi].[sum:Mortality Risk \% Mortality Risk \% (mort_risk_45-65_csv.csv):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' included-values='in-range'>
+            <min>1980</min>
+            <max>2014</max>
+          </filter>
+          <slices>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</column>
+            <column>[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names] * [federated.1t2srdc0louk9n144zqv91qw3gvi].[Multiple Values])</rows>
+        <cols>[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]</cols>
+      </table>
+      <simple-id uuid='{09734CF4-0260-496D-82ED-BAF3A4BA6378}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='21'>Mortality Risk &amp;</run>
+            <run>Æ&#10;</run>
+            <run bold='true' fontsize='21'>Life Expectancy</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='life_exp' name='federated.1t2srdc0louk9n144zqv91qw3gvi' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1t2srdc0louk9n144zqv91qw3gvi'>
+        <column datatype='string' name='[County County (life_exp.csv)]' role='dimension' semantic-role='[County].[Name]' type='nominal'>
+          <semantic-values semantic-role='[County].[Name]'>
+            <semantic-value key='&quot;Bon&quot;' value='&quot;Bon Homme&quot;' />
+            <semantic-value key='&quot;Carson&quot;' value='&quot;Carson&quot;' />
+            <semantic-value key='&quot;Charles&quot;' value='&quot;Charles&quot;' />
+            <semantic-value key='&quot;Colonial&quot;' value='&quot;Colonial Heights&quot;' />
+            <semantic-value key='&quot;East Batom Rouge&quot;' value='&quot;East Baton Rouge&quot;' />
+            <semantic-value key='&quot;Mille&quot;' value='&quot;Mille Lacs&quot;' />
+            <semantic-value key='&quot;Otter Trail&quot;' value='&quot;Otter Tail&quot;' />
+            <semantic-value key='&quot;Powder&quot;' value='&quot;Powder River&quot;' />
+            <semantic-value key='&quot;San Jaun&quot;' value='&quot;San Juan&quot;' />
+          </semantic-values>
+        </column>
+        <column datatype='string' name='[Location Location (life_exp.csv)]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Sex Sex (life_exp.csv)]' role='dimension' type='nominal' />
+        <column datatype='integer' name='[Year Year]' role='dimension' type='quantitative' />
+        <column-instance column='[County County (life_exp.csv)]' derivation='None' name='[none:County County (life_exp.csv):nk]' pivot='key' type='nominal' />
+        <column-instance column='[Location Location (life_exp.csv)]' derivation='None' name='[none:Location Location (life_exp.csv):nk]' pivot='key' type='nominal' />
+        <column-instance column='[Sex Sex (life_exp.csv)]' derivation='None' name='[none:Sex Sex (life_exp.csv):nk]' pivot='key' type='nominal' />
+        <column-instance column='[Year Year]' derivation='None' name='[none:Year Year:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='97' param='horz' w='48859' x='50658' y='906'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='83' param='horz' w='48859' x='50658' y='906'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='11' param='vert' w='48859' x='50658' y='906'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='100' h='12231' id='12' is-fixed='true' w='48859' x='50658' y='906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='484' h='55719' id='129' is-fixed='true' name='Mort RiskTrend' w='48859' x='50658' y='13137'>
+                  <layout-cache minheight='414' minwidth='184' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='30238' id='103' name='Life Expectancy' w='48859' x='50658' y='68856'>
+                  <layout-cache minheight='215' minwidth='168' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98188' id='104' name='Heatmap' show-title='false' w='50175' x='483' y='906'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='4757' id='98' mode='dropdown' name='Life Expectancy' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' w='10139' x='39469' y='7361' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='5096' id='100' mode='dropdown' name='Life Expectancy' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' w='10139' x='39469' y='1812' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='4870' id='101' mode='dropdown' name='Life Expectancy' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' w='10139' x='39529' y='13024' />
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='14383' id='130' name='Mort RiskTrend' pane-specification-id='8' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' w='5311' x='90947' y='3398' />
+        <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='7248' id='105' name='Heatmap' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' show-domain='false' show-null-ctrls='false' w='7242' x='82861' y='8494' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontsize='21'>Mortality Risk &amp;</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='21'>Life Expectancy</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='150' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='149' param='vert' w='99034' x='483' y='906'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='100' h='12231' id='12' w='48855' x='50662' y='906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='7248' id='105' name='Heatmap' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' show-domain='false' show-null-ctrls='false' w='7242' x='82861' y='8494'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98188' id='104' is-fixed='true' name='Heatmap' show-title='false' w='50179' x='483' y='906'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55719' id='129' is-fixed='true' name='Mort RiskTrend' w='48855' x='50662' y='13137'>
+                  <layout-cache minheight='414' minwidth='184' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='14383' id='130' name='Mort RiskTrend' pane-specification-id='8' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' w='5311' x='90947' y='3398'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='4757' id='98' mode='dropdown' name='Life Expectancy' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' w='10139' x='39469' y='7361'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='5096' id='100' mode='dropdown' name='Life Expectancy' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' w='10139' x='39469' y='1812'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='filter' _.fcp.SetMembershipControl.true...type-v2='filter' h='4870' id='101' mode='dropdown' name='Life Expectancy' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' w='10139' x='39529' y='13024'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='234' h='30238' id='103' is-fixed='true' name='Life Expectancy' w='48855' x='50662' y='68856'>
+                  <layout-cache minheight='215' minwidth='168' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{911DD584-E420-43CF-AB18-A118F60ED8CB}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='312'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' size='24' type='filter' />
+            <card param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' show-domain='false' show-null-ctrls='false' size='44' type='filter' />
+            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' size='27' type='filter' />
+            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' size='27' type='filter' />
+            <card pane-specification-id='0' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' size='44' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{89A9DF3D-1D65-4C75-961D-57ADAB00ABD0}' />
+    </window>
+    <window class='worksheet' name='Life Expectancy'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EBE7B3A-ADEB-49D0-8BEA-4C23177D17D4}' />
+    </window>
+    <window class='worksheet' name='Mort RiskTrend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='8' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A9A64B7-74F8-496D-9265-BFE3E9D70C32}' />
+    </window>
+    <window class='worksheet' name='Sex Mort Rate Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6C821FE-5D16-4B10-B166-A1BAB7A20D0A}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6FFE9543-9DB8-443C-8CCD-F2B8AE082DE0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Life Expectancy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Mort RiskTrend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='100' />
+      <simple-id uuid='{82B9C024-6F2C-44D5-941B-122B47877EA3}' />
+    </window>
+  </windows>
+</workbook>
