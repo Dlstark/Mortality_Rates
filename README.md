@@ -13,7 +13,7 @@ determine the male and female life expectancy and mortality rate using ages
 county/state has progressed or regressed over the 34-year span. 
 
 
-## **Motivation/why should you care:**
+## **Motivation/Why I Care:**
 The word “life” has always felt so strange to me. Is it just a number with 
 age, a long road of A to B, or what you make of it from beginning to end? 
 There is so much that plays a factor in it, so I really wanted to dig deep
