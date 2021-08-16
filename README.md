@@ -24,7 +24,7 @@ breakdown the male and female mortality risks state by state to better
 understand how America has progressed from the years 1980 through 2014.
 
 ## **Tools Used:**
-Excel, Python(Pandas), and Tableau
+Excel, Python(Pandas),Tableau, and PowerPoint
 
 
 ## **Challenges:** 
