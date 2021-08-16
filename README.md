@@ -30,7 +30,7 @@ Excel, Python(Pandas), and Tableau
 ## **Challenges:** 
 - The first challenge I across was how i wanted to break down my data and my 
 plan of attack for EDA. I had 6 worksheets in a workbook si wanted to break 
-thos down to 6 seperate CSV files to make digesting the data easier to
+those down to 6 separate CSV files to make digesting the data easier to
 accomplish.
 - After they were CSVs i had to come up with a plan of attack on how to make
 the columns and rows line up. Some CSVs had the county and state in the 
@@ -67,31 +67,31 @@ lined up throughout all of the data frames and then I was finally able to
 pull them back into a CSV. Once I pulled them in I imported them to tableau 
 where I could merge all of the CSV's together to start building my 
 visualization.
-- Pulling everything in tableau and matching all 6 CSVs was not diffcult 
+- Pulling everything in tableau and matching all 6 CSVs was not difficult 
 but very time consuming with minute details. From there it was a lot of 
-trial and error to make a presentable dashboard to fulfil anyones curious
+trial and error to make a presentable dashboard to fulfil anyone's curious
 needs. 
 
 ## **Conclusion:** 
-Overall in th past 34 years, Life expectancy seems to have gone up, and mortality
+Overall in the past 34 years, Life expectancy seems to have gone up, and mortality
 risks seem to have gone down. Throughout the United States the average age of 
-life expecantcy has gone up by just under 4 years. Alaska having the greatest
+life expectancy has gone up by just under 4 years. Alaska having the greatest
 increase in age being over 7 years. One thing worth noting in regard to the 25-45
 age group. The only time where mortality risk increased was in that age group and
-it was from 1985-1995. That occured in almost every single state, and only for
+it was from 1985-1995. That occurred in almost every single state, and only for
 that age group. As far as why, I was unsuccessful finding any solid reason that 
-may have caused this, but is definetly worth mentioning. Now for a finding that 
+may have caused this, but is definitely worth mentioning. Now for a finding that 
 may not come as a surprise. Over the 34 years of data collected, females have 
 had a higher life expectancy rate with an average of 1.2 years. With that being 
 said, the mortality risk tells a completely different story. Across all years 
 included in this data set females also have a higher mortality risk in every age 
-group. One other neat find in regards to the mortality risk over the time span, 
+group. One other neat find in regard to the mortality risk over the time span, 
 for the age group 65 through 85 we have been able to lower their mortality risk 
 by over 10% for both male and female.
 
 ## **Fun Facts:**
-- The state of Delaware has the fewest amount of counties, it only has 3.
-- The most common county name is Washington County, 31 states have this county.
+- The state of Delaware has the fewest number of counties, it only has 3.
+- The most common county name is Washington County; 31 states have this county.
 - Louisiana is the only state to still have parishes and not counties. This is 
 from the state being Roman Catholic under both Frances and Spain’s rule.
 Through each change in history, they have never deviated from that.
@@ -105,4 +105,7 @@ Through each change in history, they have never deviated from that.
  
  ## **Key Notes:** 
 - Probability of death in %, numbers are 95% uncertainty intervals.
-- Life expectancy at birthin years, numbers are 95% uncertainty intervals.
+- Life expectancy at birth in years, numbers are 95% uncertainty intervals.
+
+## **Dashboard Link** 
+[https://public.tableau.com/app/profile/dave.stark6124/viz/Dashboard_16291278507790/Dashboard1?publish=yes]
