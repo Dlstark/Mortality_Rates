@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20211.21.0511.0935                               -->
-<workbook source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook source-build='2021.1.2 (20211.21.0511.0935)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <_.fcp.AllowCalculationsForDensifiedMarks.true...AllowCalculationsForDensifiedMarks />
     <AutoCreateAndUpdateDSDPhoneLayouts />
@@ -18,6 +18,7 @@
     <WorksheetBackgroundTransparency />
     <ZoneBackgroundTransparency />
   </document-format-change-manifest>
+  <repository-location id='Dashboard_16291278507790' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -27,7 +28,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='life_exp' name='textscan.1erayxb1yj0nch15kw4re1w9z354'>
-            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/Data/life_exp.csv' dataRefreshTime='' directory='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/Data' filename='C:/Users/dlsta/AppData/Local/Temp/TableauTemp/08tfmp916dik8m12goyfz0w1orc6/life_exp.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/Data/life_exp.csv' dataRefreshTime='' directory='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/Data' filename='C:/Users/dlsta/AppData/Local/Temp/TableauTemp/08tfmp916dik8m12goyfz0w1orc6/life_exp.csv.xlsx' interpretationMode='8' password='' server='' validate='no' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Union' type='union'>
@@ -1166,7 +1167,7 @@
         <drill-path name='State, County' />
       </drill-paths>
       <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/life_exp.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/16/2021 03:29:33 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/dlsta/Desktop/NSS/Projects/Mortality_Rates/life_exp.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
           <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='_B1FF2F39687A4143BD1252BFBE25F9C1' table='[Extract].[_B1FF2F39687A4143BD1252BFBE25F9C1]' type='table' />
           <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
             <relation name='life_exp.csv_777E3707CB4449AFA9157F1F826612B2' table='[Extract].[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]' type='table' />
@@ -1222,9 +1223,6 @@
             <map key='[Year Year (mort_risk_65-85_csv.csv)]' value='[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9].[Year Year]' />
             <map key='[Year Year]' value='[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3].[Year Year]' />
           </cols>
-          <refresh increment-key='' incremental-updates='false'>
-            <refresh-event add-from-file-path='life_exp' increment-value='%null%' refresh-type='create' rows-inserted='842424' timestamp-start='2021-08-16 15:29:33.102' />
-          </refresh>
           <metadata-records>
             <metadata-record class='column'>
               <remote-name>F1</remote-name>
@@ -1238,7 +1236,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>76584</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location Location</remote-name>
@@ -1253,7 +1250,6 @@
               <approx-count>56</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>County County</remote-name>
@@ -1268,7 +1264,6 @@
               <approx-count>4691</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Age in Years Age in Years</remote-name>
@@ -1282,7 +1277,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>3648</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Sex Sex</remote-name>
@@ -1297,7 +1291,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year Year</remote-name>
@@ -1311,7 +1304,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[life_exp.csv_777E3707CB4449AFA9157F1F826612B2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>F1</remote-name>
@@ -1325,7 +1317,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>231941</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location Location</remote-name>
@@ -1340,7 +1331,6 @@
               <approx-count>74</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>County County</remote-name>
@@ -1355,7 +1345,6 @@
               <approx-count>7920</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mortality Risk % Mortality Risk %</remote-name>
@@ -1369,7 +1358,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>13129</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Sex Sex</remote-name>
@@ -1384,7 +1372,6 @@
               <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year Year</remote-name>
@@ -1398,7 +1385,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Table Name</remote-name>
@@ -1413,7 +1399,6 @@
               <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[_B1FF2F39687A4143BD1252BFBE25F9C1]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>F1</remote-name>
@@ -1427,7 +1412,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>76584</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location Location</remote-name>
@@ -1442,7 +1426,6 @@
               <approx-count>77</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>County County</remote-name>
@@ -1457,7 +1440,6 @@
               <approx-count>4807</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mortality Risk % Mortality Risk %</remote-name>
@@ -1471,7 +1453,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>423</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Sex Sex</remote-name>
@@ -1486,7 +1467,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year Year</remote-name>
@@ -1500,7 +1480,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_0-5_csv.csv_4CF1575C00D940A2995979C19C763EF3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>F1</remote-name>
@@ -1514,7 +1493,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>76584</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location Location</remote-name>
@@ -1529,7 +1507,6 @@
               <approx-count>77</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>County County</remote-name>
@@ -1544,7 +1521,6 @@
               <approx-count>4406</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mortality Risk % Mortality Risk %</remote-name>
@@ -1558,7 +1534,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>1026</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Sex Sex</remote-name>
@@ -1573,7 +1548,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year Year</remote-name>
@@ -1587,7 +1561,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_25-45_csv.csv_318BA25BF78740B8A9507B42768A93EC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>F1</remote-name>
@@ -1601,7 +1574,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>76584</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location Location</remote-name>
@@ -1616,7 +1588,6 @@
               <approx-count>63</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>County County</remote-name>
@@ -1631,7 +1602,6 @@
               <approx-count>4489</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mortality Risk % Mortality Risk %</remote-name>
@@ -1645,7 +1615,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>4324</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Sex Sex</remote-name>
@@ -1660,7 +1629,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year Year</remote-name>
@@ -1674,7 +1642,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_45-65_csv.csv_2B947CB94A6248319B65961840EEBDDD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>F1</remote-name>
@@ -1688,7 +1655,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>76584</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location Location</remote-name>
@@ -1703,7 +1669,6 @@
               <approx-count>77</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>County County</remote-name>
@@ -1718,7 +1683,6 @@
               <approx-count>4572</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mortality Risk % Mortality Risk %</remote-name>
@@ -1732,7 +1696,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>336</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Sex Sex</remote-name>
@@ -1747,7 +1710,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year Year</remote-name>
@@ -1761,7 +1723,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_5-25_csv.csv_70FC456C529B48C5A6CE0D3312BAD83E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>F1</remote-name>
@@ -1775,7 +1736,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>76584</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Location Location</remote-name>
@@ -1790,7 +1750,6 @@
               <approx-count>56</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>County County</remote-name>
@@ -1805,7 +1764,6 @@
               <approx-count>4738</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Mortality Risk % Mortality Risk %</remote-name>
@@ -1819,7 +1777,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>7747</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Sex Sex</remote-name>
@@ -1834,7 +1791,6 @@
               <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Year Year</remote-name>
@@ -1848,7 +1804,6 @@
               <aggregation>Sum</aggregation>
               <approx-count>8</approx-count>
               <contains-null>true</contains-null>
-              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[mort_risk_65-85_csv.csv_2BD2B7C4F56B4BF58562AA7206E20EC9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
             </metadata-record>
           </metadata-records>
         </connection>
@@ -2350,8 +2305,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' field-type='quantitative' max='33562819.489521116' min='25517815.516884111' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' field-type='quantitative' max='8411953.8073499762' min='14614.174316961376' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' field-type='quantitative' max='32800309.908870231' min='26128624.18804675' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' field-type='quantitative' max='8301013.8745414326' min='1337137.7704196717' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
             <format attr='tick-color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk %:qk]' value='#ffffff' />
           </style-rule>
           <style-rule element='label'>
@@ -3017,9 +2972,9 @@
           </layout-options>
           <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='166' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='165' param='vert' w='99034' x='483' y='906'>
-                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='100' h='12231' id='12' w='48883' x='50634' y='906'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='168' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='167' param='vert' w='99034' x='483' y='906'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='100' h='12231' id='12' w='48886' x='50631' y='906'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3037,7 +2992,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='98188' id='104' is-fixed='true' name='Heatmap' show-title='false' w='50151' x='483' y='906'>
+                <zone fixed-size='280' h='98188' id='104' is-fixed='true' name='Heatmap' show-title='false' w='50148' x='483' y='906'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -3055,7 +3010,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' h='55719' id='129' is-fixed='true' name='Mort RiskTrend' w='48883' x='50634' y='13137'>
+                <zone fixed-size='280' h='55719' id='129' is-fixed='true' name='Mort RiskTrend' w='48886' x='50631' y='13137'>
                   <layout-cache minheight='414' minwidth='184' type-h='scalable' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -3101,7 +3056,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='234' h='30238' id='103' is-fixed='true' name='Life Expectancy' w='48883' x='50634' y='68856'>
+                <zone fixed-size='234' h='30238' id='103' is-fixed='true' name='Life Expectancy' w='48886' x='50631' y='68856'>
                   <layout-cache minheight='215' minwidth='168' type-h='scalable' type-w='scalable' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />

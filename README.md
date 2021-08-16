@@ -108,4 +108,4 @@ Through each change in history, they have never deviated from that.
 - Life expectancy at birth in years, numbers are 95% uncertainty intervals.
 
 ## **Dashboard Link** 
-[https://public.tableau.com/app/profile/dave.stark6124/viz/Dashboard_16291278507790/Dashboard1?publish=yes]
+[https://public.tableau.com/app/profile/dave.stark6124/viz/Dashboard_16291278507790/Dashboard1]
