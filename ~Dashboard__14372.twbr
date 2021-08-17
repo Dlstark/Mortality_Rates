@@ -2305,8 +2305,8 @@
         </view>
         <style>
           <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' field-type='quantitative' max='32800309.908870231' min='26128624.18804675' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' field-type='quantitative' max='8301013.8745414326' min='1337137.7704196717' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Longitude (generated)]' field-type='quantitative' max='31456803.064010113' min='28761477.264933266' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[Latitude (generated)]' field-type='quantitative' max='5725192.6958577484' min='2983960.9982616487' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
             <format attr='tick-color' field='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Mortality Risk % Mortality Risk %:qk]' value='#ffffff' />
           </style-rule>
           <style-rule element='label'>
@@ -2903,11 +2903,11 @@
       </datasource-dependencies>
       <zones>
         <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
-          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='159' param='horz' w='99034' x='483' y='906'>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98188' id='157' w='99034' x='483' y='906'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='97' param='horz' w='48886' x='50631' y='906'>
-                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98188' id='11' param='vert' w='48886' x='50631' y='906'>
-                  <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='100' h='12231' id='12' is-fixed='true' w='48886' x='50631' y='906'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='159' param='horz' w='99034' x='483' y='929'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='98142' id='157' w='99034' x='483' y='929'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='97' param='horz' w='48889' x='50628' y='929'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98142' id='11' param='vert' w='48889' x='50628' y='929'>
+                  <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' fixed-size='100' h='12543' id='12' is-fixed='true' w='48889' x='50628' y='929'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -2915,7 +2915,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone fixed-size='484' h='55719' id='129' is-fixed='true' name='Mort RiskTrend' w='48886' x='50631' y='13137'>
+                  <zone fixed-size='484' h='57143' id='129' is-fixed='true' name='Mort RiskTrend' w='48889' x='50628' y='13472'>
                     <layout-cache minheight='414' minwidth='184' type-h='scalable' type-w='scalable' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -2924,7 +2924,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='30238' id='103' name='Life Expectancy' w='48886' x='50631' y='68856'>
+                  <zone h='28456' id='103' name='Life Expectancy' w='48889' x='50628' y='70615'>
                     <layout-cache minheight='215' minwidth='168' type-h='scalable' type-w='scalable' />
                     <zone-style>
                       <format attr='border-color' value='#000000' />
@@ -2935,7 +2935,7 @@
                   </zone>
                 </zone>
               </zone>
-              <zone h='98188' id='104' name='Heatmap' show-title='false' w='50148' x='483' y='906'>
+              <zone h='98142' id='104' name='Heatmap' show-title='false' w='50145' x='483' y='929'>
                 <zone-style>
                   <format attr='border-color' value='#000000' />
                   <format attr='border-style' value='none' />
@@ -3084,96 +3084,7 @@
     <window class='worksheet' name='Heatmap'>
       <cards>
         <edge name='left'>
-          <strip size='249'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='30'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' size='19' type='filter' />
-            <card param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' show-domain='false' show-null-ctrls='false' size='35' type='filter' />
-            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' size='21' type='filter' />
-            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' size='21' type='filter' />
-            <card pane-specification-id='0' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' size='35' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{89A9DF3D-1D65-4C75-961D-57ADAB00ABD0}' />
-    </window>
-    <window class='worksheet' name='Life Expectancy'>
-      <cards>
-        <edge name='left'>
-          <strip size='200'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='38'>
-            <card type='columns' />
-          </strip>
-          <strip size='38'>
-            <card type='rows' />
-          </strip>
-          <strip size='38'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{5EBE7B3A-ADEB-49D0-8BEA-4C23177D17D4}' />
-    </window>
-    <window class='worksheet' name='Mort RiskTrend'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-            <card type='measures' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='30'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='8' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' type='color' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{4A9A64B7-74F8-496D-9265-BFE3E9D70C32}' />
-    </window>
-    <window class='worksheet' name='Sex Mort Rate Trend'>
-      <cards>
-        <edge name='left'>
-          <strip size='128'>
+          <strip size='199'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3192,16 +3103,48 @@
         </edge>
         <edge name='right'>
           <strip size='128'>
-            <card pane-specification-id='4' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex:nk]' type='color' />
+            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:County County (life_exp.csv):nk]' size='15' type='filter' />
+            <card param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Year Year:qk]' show-domain='false' show-null-ctrls='false' size='28' type='filter' />
+            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Location Location (life_exp.csv):nk]' size='16' type='filter' />
+            <card mode='dropdown' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex (life_exp.csv):nk]' size='16' type='filter' />
+            <card pane-specification-id='0' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' size='28' type='color' />
           </strip>
         </edge>
       </cards>
-      <simple-id uuid='{D6C821FE-5D16-4B10-B166-A1BAB7A20D0A}' />
+      <simple-id uuid='{89A9DF3D-1D65-4C75-961D-57ADAB00ABD0}' />
     </window>
-    <window class='worksheet' name='Sheet 5'>
+    <window class='worksheet' name='Life Expectancy'>
       <cards>
         <edge name='left'>
           <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
+            <card pane-specification-id='0' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[avg:Age in Years Age in Years:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EBE7B3A-ADEB-49D0-8BEA-4C23177D17D4}' />
+    </window>
+    <window class='worksheet' name='Mort RiskTrend'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
             <card type='pages' />
             <card type='filters' />
             <card type='marks' />
@@ -3215,12 +3158,69 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='24'>
             <card type='title' />
           </strip>
         </edge>
         <edge name='right'>
-          <strip size='160'>
+          <strip size='128'>
+            <card pane-specification-id='8' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A9A64B7-74F8-496D-9265-BFE3E9D70C32}' />
+    </window>
+    <window class='worksheet' name='Sex Mort Rate Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='102'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='19'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='102'>
+            <card pane-specification-id='4' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6C821FE-5D16-4B10-B166-A1BAB7A20D0A}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='128'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='24'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='128'>
             <card pane-specification-id='5' param='[federated.1t2srdc0louk9n144zqv91qw3gvi].[none:Sex Sex:nk]' type='color' />
           </strip>
         </edge>
@@ -3239,7 +3239,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='-1' />
+      <active id='12' />
       <simple-id uuid='{82B9C024-6F2C-44D5-941B-122B47877EA3}' />
     </window>
   </windows>
